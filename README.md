@@ -1,4 +1,4 @@
-# personal-website-v1 WIP
+# Jason Mui Personal Website WIP
 
 Design Created with Figma
 
