@@ -20,11 +20,11 @@ html {
 /* General CSS */
 
 body {
+  width: 100vw;
   font-family: "Poppins", sans-serif;
   background-image: url("../images/worn_dots_@2X.png");
   background-size: 70%;
   overflow-x: hidden;
-  border: rebeccapurple solid 2px;
 }
 
 .container {
@@ -48,7 +48,8 @@ body {
   padding-top: 0.6rem;
   padding-left: 20px;
   font-weight: bold;
-  top: 300%;
+  top: 310%;
+  z-index: 999999;
 }
 
 .CTA-button img {
@@ -57,76 +58,6 @@ body {
   width: 1.375rem;
   margin-left: 10px;
   top: 8px;
-}
-
-/* Header Section */
-
-.header ul {
-  display: inline-block;
-  padding: 0;
-}
-
-.nav-links {
-  position: absolute;
-  width: 20rem;
-  right: 0;
-  left: 0;
-  margin-top: 1.9rem;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #eeeeee;
-
-  z-index: 9999;
-  border-radius: 5px;
-}
-
-.nav-links li {
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
-.nav-links a {
-  color: black;
-  font-weight: bold;
-  line-height: 3;
-  font-size: 1.5rem;
-}
-
-.nav-links span {
-  position: relative;
-  display: inline-block;
-  height: 5px;
-  width: 180px;
-  background-color: #fb3230;
-  top: -2rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
-.logo {
-  width: 2rem;
-  height: 3.25rem;
-  margin-top: 1rem;
-  margin-left: 2rem;
-  transform: rotate(20deg);
-}
-
-.hamburger {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  cursor: pointer;
-}
-
-.x-button {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  cursor: pointer;
-}
-
-.closed {
-  visibility: hidden;
 }
 
 /* Hero Section */
@@ -244,4 +175,27 @@ footer a {
   position: fixed;
   bottom: 60px;
   right: 20px;
+}
+
+/* Media Queries */
+
+/*700px*/
+@media (min-width: 43.75rem) {
+  h1 {
+    color: aqua;
+  }
+}
+
+/*992px*/
+@media (min-width: 62rem) {
+  h1 {
+    color: olive;
+  }
+}
+
+/*1392px*/
+@media (min-width: 87rem) {
+  h1 {
+    color: goldenrod;
+  }
 }
