@@ -22,11 +22,14 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-image: url("../images/worn_dots_@2X.png");
-  background-size: 75%;
-  overflow: hidden;
+  background-size: 70%;
+  overflow-x: hidden;
+  border: rebeccapurple solid 2px;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
 }
 
@@ -45,7 +48,7 @@ body {
   padding-top: 0.6rem;
   padding-left: 20px;
   font-weight: bold;
-  top: 20rem;
+  top: 300%;
 }
 
 .CTA-button img {
@@ -136,12 +139,9 @@ body {
 }
 
 .left-hero p {
-  /* font-size: 0.8125rem; */
   font-size: 3vmin;
   font-weight: 500;
   margin-top: 1rem;
-  margin-left: 3.1875rem;
-  margin-right: 3.1875rem;
   color: gray;
   text-align: center;
 }
@@ -164,6 +164,84 @@ h1 span {
   align-items: center;
 }
 .right-hero img {
+  margin-top: 0.75rem;
   height: 70%;
   width: 70%;
+}
+
+/* Info Section */
+
+.info-robot {
+  display: none;
+}
+
+.zig-zag-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.headshot {
+  margin-top: 7rem;
+  border-radius: 200%;
+  height: 40%;
+  width: 40%;
+}
+
+.zig-zag-mobile {
+  width: 450%;
+  height: 450%;
+  position: absolute;
+  z-index: -999;
+  top: -330px;
+  left: -800px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 5rem;
+}
+
+.links li {
+  margin-left: 45px;
+}
+.links a {
+  position: relative;
+  color: black;
+  font-weight: bold;
+  line-height: 3;
+  font-size: 1rem;
+}
+
+.links img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -45px;
+}
+
+/* Footer Styles */
+
+footer {
+  font-size: medium;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: gray;
+  text-align: center;
+}
+
+footer a {
+  color: gray;
+  font-size: x-small;
+}
+
+/* Chevron Position */
+
+.chevron {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
 }
