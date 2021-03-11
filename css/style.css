@@ -23,10 +23,37 @@ body {
   font-family: "Poppins", sans-serif;
   background-image: url("../images/worn_dots_@2X.png");
   background-size: 75%;
+  overflow: hidden;
 }
 
 .container {
   width: 100vw;
+}
+
+/* Button Styles Mobile */
+.CTA-button {
+  position: absolute;
+  cursor: pointer;
+  background-color: #fb3230;
+  display: inline-block;
+  color: white;
+  font-size: 1rem;
+  height: 2.625rem;
+  width: 8.6875rem;
+  border-radius: 100px;
+  text-align: left;
+  padding-top: 0.6rem;
+  padding-left: 20px;
+  font-weight: bold;
+  top: 20rem;
+}
+
+.CTA-button img {
+  position: absolute;
+  height: 1.375rem;
+  width: 1.375rem;
+  margin-left: 10px;
+  top: 8px;
 }
 
 /* Header Section */
@@ -101,20 +128,6 @@ body {
 
 /* Hero Section */
 
-h1 {
-  font-size: 1.5rem;
-  font-weight: 900;
-  margin-top: 1.25rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  text-align: center;
-}
-
-h1 span {
-  text-decoration: underline;
-  text-decoration-thickness: 4px;
-}
-
 .left-hero {
   display: flex;
   position: relative;
@@ -123,37 +136,26 @@ h1 span {
 }
 
 .left-hero p {
-  font-size: 0.8125rem;
+  /* font-size: 0.8125rem; */
+  font-size: 3vmin;
   font-weight: 500;
   margin-top: 1rem;
   margin-left: 3.1875rem;
   margin-right: 3.1875rem;
   color: gray;
+  text-align: center;
 }
 
-.CTA-button {
-  position: absolute;
-  cursor: pointer;
-  background-color: #fb3230;
-  display: inline-block;
-  color: white;
-  font-size: 1rem;
-  height: 2.625rem;
-  width: 8.6875rem;
-  border-radius: 100px;
-  text-align: left;
-  padding-top: 0.6rem;
-  padding-left: 20px;
-  font-weight: bold;
-  top: 20rem;
+h1 {
+  font-size: 6vmin;
+  font-weight: 900;
+  margin-top: 1.25rem;
+  text-align: center;
 }
 
-.CTA-button img {
-  position: absolute;
-  height: 1.375rem;
-  width: 1.375rem;
-  margin-left: 10px;
-  top: 8px;
+h1 span {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
 }
 
 .right-hero {
