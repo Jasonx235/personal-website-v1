@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="images/clip-175.png" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="icon" href="images/clip-175.svg" />
     <title>About Me</title>
   </head>
   <body>
     <div class="wrapper">
       <section class="header" id="top">
         <div class="container">
-          <a href="/"
-            ><img class="logo" src="/images/clip-175.png" alt="rocket-img"
-          /></a>
-          <ul class="nav-links">
+          <div>
+            <a href="/"
+              ><img class="logo" src="/images/clip-175.svg" alt="rocket-img"
+            /></a>
+          </div>
+          <ul class="nav-links closed" id="mobile-menu">
             <li>
               <a href="about.html">About</a>
             </li>
@@ -27,13 +30,15 @@
             </li>
           </ul>
           <img
-            class="hamburger"
-            src="images/hamburger.png"
+            class="mobile-menu-button"
+            id="mobile-menu-button-ham"
+            src="images/hamburger.svg"
             alt="hamburger-icon"
           />
           <img
-            class="X-button"
-            src="images/x-icon.png"
+            class="mobile-menu-button closed fixed"
+            id="mobile-menu-button-x"
+            src="images/x-icon.svg"
             alt="x-icon-close-menu"
           />
         </div>
@@ -42,7 +47,11 @@
         <div class="container">
           <div class="left-about">
             <h1>About Me</h1>
-            <img src="images/headshot2.jpg" alt="headshot" />
+            <img
+              class="headshot headshot-about"
+              src="images/headshot2square.jpg"
+              alt="headshot"
+            />
           </div>
           <div class="right-about">
             <p>
@@ -53,15 +62,15 @@
               soluta est voluptate distinctio, cum saepe, laborum recusandae
               architecto deserunt nulla error aliquid. Quae, cumque ex?
             </p>
-            <a href="portfolio.html"
-              >My Work<img src="images/my-work-icon.png" alt="computer-icon"
+            <a href="portfolio.html" class="CTA-button CTA-about"
+              >My Work<img src="images/my-work-icon.svg" alt="computer-icon"
             /></a>
-            <div class="links">
+            <div class="links links-about">
               <ul>
                 <li>
                   <a href="https://github.com/Jasonx235"
                     ><img
-                      src="images/github-icon.png"
+                      src="images/github-icon.svg"
                       alt="github-icon"
                     />GitHub</a
                   >
@@ -69,7 +78,7 @@
                 <li>
                   <a href="https://www.linkedin.com/in/jmui/"
                     ><img
-                      src="images/linkedin-icon.png"
+                      src="images/linkedin-icon.svg"
                       alt="linkedin-icon"
                     />LinkedIn</a
                   >
@@ -77,7 +86,7 @@
                 <li>
                   <a href="resources/MuiJasonResumeUpdated2-26-21.pdf"
                     ><img
-                      src="images/resume-icon.png"
+                      src="images/resume-icon.svg"
                       alt="resume-icon"
                     />Resume</a
                   >
@@ -89,52 +98,56 @@
       </section>
       <section class="secondary">
         <div class="container">
-          <div class="programming-lang">
+          <div class="skills">
             <h2>Programming Languages</h2>
             <ul>
               <li>
                 <img
-                  src="images/logos_javascript.png"
+                  src="images/logos_javascript.svg"
                   alt="javascript-logo"
                 />Javascript
               </li>
-              <li><img src="images/logos_html-5.png" alt="html-logo" />HTML</li>
-              <li><img src="images/logos_css-3.png" alt="css-logo" />CSS</li>
+              <li><img src="images/logos_html-5.svg" alt="html-logo" />HTML</li>
+              <li><img src="images/logos_css-3.svg" alt="css-logo" />CSS</li>
               <li>
                 <img
-                  src="images/logos_c-plusplus.png"
+                  src="images/logos_c-plusplus.svg"
                   alt="cplusplus-logo"
                 />C++
               </li>
-              <li><img src="images/logos_java.png" alt="java-logo" />Java</li>
+              <li><img src="images/logos_java.svg" alt="java-logo" />Java</li>
               <li>
-                <img src="images/logos_nodejs.png" alt="nodejs-logo" />Node.js
+                <img src="images/logos_nodejs.svg" alt="nodejs-logo" />Node.js
               </li>
             </ul>
           </div>
-          <div class="tools-technology">
+          <div class="skills">
             <h2>Tools and Libraries</h2>
             <ul>
               <li>
-                <img src="images/logos_react.png" alt="react-logo" />React
+                <img src="images/logos_react.svg" alt="react-logo" />React
               </li>
-              <li><img src="images/mysql-logo.png" alt="mysql-logo" />[SQL]</li>
+              <li><img src="images/mysql-logo.svg" alt="mysql-logo" />[SQL]</li>
               <li>
-                <img src="images/logos_mongodb.png" alt="logos_mongodb" />
+                <img src="images/logos_mongodb.svg" alt="logos_mongodb" />
                 [NoSQL]
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <img src="images/zig-zag.png" alt="zig-zag-design" />
+      <div class="zig-zag-container">
+        <img src="images/zig-zag.svg" alt="zig-zag-design" />
+      </div>
+
       <footer>
         <p>Jason Mui &copy; 2021</p>
         <a href="https://icons8.com/">Illustrations from Icons8</a>
       </footer>
     </div>
-    <a href="#top"
-      ><img src="images/akar-icons_circle-chevron-up.png" alt="up-button"
+    <a class="chevron" href="#top"
+      ><img src="images/akar-icons_circle-chevron-up.svg" alt="up-button"
     /></a>
+    <script src="script.js"></script>
   </body>
 </html>

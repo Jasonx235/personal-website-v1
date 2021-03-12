@@ -1,0 +1,75 @@
+/* Specific CSS for about page */
+h1 {
+  font-size: 8vmin;
+}
+
+h2 {
+  font-size: 6vmin;
+  font-weight: 800;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.headshot-about {
+  margin-top: 2rem;
+}
+
+.CTA-about {
+  margin-top: 2rem;
+}
+
+.left-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.right-about p {
+  font-size: 0.7rem;
+}
+
+.links-about {
+  margin-top: 2.5rem;
+}
+
+.skills {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills ul {
+  margin-top: 2rem;
+}
+
+.skills li {
+  color: black;
+  font-weight: bold;
+  line-height: 3;
+  font-size: 1rem;
+}
+
+.skills li img {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  top: 14px;
+  right: 10px;
+}
+
+.zig-zag-container {
+  margin-top: 20px;
+}
+
+footer {
+  position: relative;
+  top: -250px;
+}

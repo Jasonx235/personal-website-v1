@@ -7,7 +7,6 @@
     <title>Hi, I'm Jason</title>
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css" />
 
     <link rel="icon" href="images/clip-175.svg" />
   </head>
@@ -15,9 +14,11 @@
     <div class="wrapper">
       <section class="header" id="top">
         <div class="container">
-          <a href="#"
-            ><img class="logo" src="/images/clip-175.svg" alt="rocket-img"
-          /></a>
+          <div>
+            <a href="/"
+              ><img class="logo" src="/images/clip-175.svg" alt="rocket-img"
+            /></a>
+          </div>
           <ul class="nav-links closed" id="mobile-menu">
             <li>
               <a href="about.html">About</a>
@@ -36,7 +37,7 @@
             alt="hamburger-icon"
           />
           <img
-            class="mobile-menu-button closed"
+            class="mobile-menu-button closed fixed"
             id="mobile-menu-button-x"
             src="images/x-icon.svg"
             alt="x-icon-close-menu"
@@ -51,7 +52,7 @@
               a <span class="underline">Web Developer</span>
             </h1>
             <p>Let's Build Something Awesome Together!</p>
-            <a href="portfolio.html" class="CTA-button"
+            <a href="portfolio.html" class="CTA-button CTA-landing-position"
               >My Work<img src="images/my-work-icon.svg" alt="computer-icon"
             /></a>
           </div>
