@@ -20,6 +20,7 @@ html {
 /* General CSS */
 
 body {
+  /* border: 5px solid goldenrod; */
   width: 100vw;
   font-family: "Poppins", sans-serif;
   background-image: url("../images/worn_dots_@2X.png");
@@ -30,6 +31,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100vw;
 }
 
@@ -52,8 +54,8 @@ body {
 }
 
 .CTA-landing-position {
-  position: absolute;
-  top: 310%;
+  margin-top: 1rem;
+  order: 1;
 }
 
 .CTA-button img {
@@ -66,6 +68,9 @@ body {
 
 /* Header Section */
 
+.margin-top {
+  margin-top: 100px;
+}
 .header ul {
   display: inline-block;
   padding: 0;
@@ -123,17 +128,19 @@ body {
 } */
 
 .logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 2.5rem;
+
   width: 2rem;
   height: 3.25rem;
-  margin-top: 1rem;
-  margin-left: 2rem;
   transform: rotate(20deg);
 }
 
 .mobile-menu-button {
   position: absolute;
   top: 2.2rem;
-  right: 2.2rem;
+  right: 1.2rem;
   cursor: pointer;
   z-index: 9999999;
 }

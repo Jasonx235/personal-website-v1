@@ -1,4 +1,9 @@
 /* Specific CSS for about page */
+.wrapper {
+  /* border: 5px solid goldenrod; */
+  height: 1950px;
+}
+
 h1 {
   font-size: 8vmin;
 }
