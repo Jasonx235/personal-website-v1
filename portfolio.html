@@ -5,36 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="images/clip-175.png" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="icon" href="images/clip-175.svg" />
     <title>My Work</title>
   </head>
   <body>
     <div class="wrapper">
       <section class="header" id="top">
         <div class="container">
-          <a href="/"
-            ><img class="logo" src="/images/clip-175.png" alt="rocket-img"
-          /></a>
-          <ul class="nav-links">
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="portfolio.html">Portfolio</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
+          <div class="start">
+            <a href="/"
+              ><img class="logo" src="/images/clip-175.svg" alt="rocket-img"
+            /></a>
+          </div>
+          <div class="menu-container closed" id="mobile-menu">
+            <div class="inner-menu">
+              <ul class="nav-links">
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <img
+                class="mobile-menu-button-x closed"
+                id="mobile-menu-button-x"
+                src="images/x-icon.svg"
+                alt="x-icon-close-menu"
+              />
+            </div>
+          </div>
           <img
-            class="hamburger"
-            src="images/hamburger.png"
+            class="mobile-menu-button"
+            id="mobile-menu-button-ham"
+            src="images/hamburger.svg"
             alt="hamburger-icon"
-          />
-          <img
-            class="X-button"
-            src="images/x-icon.png"
-            alt="x-icon-close-menu"
           />
         </div>
       </section>
@@ -96,17 +105,28 @@
       <section class="info">
         <div class="container">
           <img
-            src="images/clip-computer-technology-and-robot.png"
+            class="info-robot"
+            src="images/clip-computer-technology-and-robot.svg"
             alt="robot-computer"
           />
-          <img src="images/headshot2.jpg" alt="headshot" />
-          <img src="images/zig-zag.png" alt="zig-zag-design" />
+          <div class="zig-zag-container">
+            <img
+              class="headshot"
+              src="images/headshot2square.jpg"
+              alt="photo"
+            />
+            <img
+              class="zig-zag-mobile"
+              src="images/zig-zag.svg"
+              alt="zig-zag-design"
+            />
+          </div>
           <div class="links">
             <ul>
               <li>
                 <a href="https://github.com/Jasonx235"
                   ><img
-                    src="images/github-icon.png"
+                    src="images/github-icon.svg"
                     alt="github-icon"
                   />GitHub</a
                 >
@@ -114,7 +134,7 @@
               <li>
                 <a href="https://www.linkedin.com/in/jmui/"
                   ><img
-                    src="images/linkedin-icon.png"
+                    src="images/linkedin-icon.svg"
                     alt="linkedin-icon"
                   />LinkedIn</a
                 >
@@ -122,7 +142,7 @@
               <li>
                 <a href="resources/MuiJasonResumeUpdated2-26-21.pdf"
                   ><img
-                    src="images/resume-icon.png"
+                    src="images/resume-icon.svg"
                     alt="resume-icon"
                   />Resume</a
                 >
@@ -136,8 +156,9 @@
         <a href="https://icons8.com/">Illustrations from Icons8</a>
       </footer>
     </div>
-    <a href="#top"
-      ><img src="images/akar-icons_circle-chevron-up.png" alt="up-button"
+    <a class="chevron" href="#top"
+      ><img src="images/akar-icons_circle-chevron-up.svg" alt="up-button"
     /></a>
+    <script src="script.js"></script>
   </body>
 </html>

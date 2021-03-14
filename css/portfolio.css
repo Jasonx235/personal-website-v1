@@ -1,0 +1,19 @@
+/* css for portfolio page */
+.main-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  width: 200px;
+  height: 100px;
+}
