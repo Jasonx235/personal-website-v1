@@ -80,14 +80,21 @@ body {
 .header :first-of-type(a) {
   display: block;
 }
-.nav-links {
+
+.menu-container {
   position: fixed;
   margin-top: 1.2rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(236, 236, 236, 0.99);
-  width: 90vmin;
   z-index: 9999999;
+}
+
+.inner-menu {
+  position: relative;
+}
+.nav-links {
+  width: 95vmin;
+  background-color: rgba(236, 236, 236, 0.99);
   border-radius: 5px;
 }
 
@@ -139,6 +146,14 @@ body {
   position: absolute;
   top: 2.2rem;
   right: 1.2rem;
+  cursor: pointer;
+  z-index: 9999999;
+}
+
+.mobile-menu-button-x {
+  position: absolute;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
   z-index: 9999999;
 }
@@ -270,15 +285,15 @@ footer a {
 
 /* Media Queries */
 
-/*700px*/
-@media (min-width: 43.75rem) {
+/*768px*/
+@media (min-width: 48rem) {
   h1 {
     color: aqua;
   }
 }
 
-/*992px*/
-@media (min-width: 62rem) {
+/*1024px*/
+@media (min-width: 64rem) {
   h1 {
     color: olive;
   }
