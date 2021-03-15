@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="icon" href="images/clip-175.svg" />
     <title>Contact Me</title>
   </head>
@@ -46,9 +47,9 @@
           />
         </div>
       </section>
-      <h1>Send Me a Message!</h1>
-      <section class="contact-form">
-        <form action="GET" class="main-form">
+      <section class="contact-form margin-top">
+        <h1>Send Me A Message!</h1>
+        <form class="main-form">
           <div class="mobile-form">
             <label for="firstName">First Name* </label>
             <input type="text" name="firstName" id="firstName" required />
@@ -71,22 +72,30 @@
               required
             ></textarea>
           </div>
-          <input type="submit" name="Send" id="Send" />
+          <div class="submit-container">
+            <input type="submit" name="Send" id="Send" value="Send" />
+          </div>
         </form>
       </section>
       <section class="info">
         <div class="container">
-          <img
-            class="info-robot"
-            src="images/clip-computer-technology-and-robot.svg"
-            alt="robot-computer"
-          />
-          <img
-            class="headshot"
-            src="images/headshot2square.jpg"
-            alt="headshot"
-          />
-          <img src="images/zig-zag.svg" alt="zig-zag-design" />
+          <div class="zig-zag-container">
+            <img
+              class="info-robot"
+              src="images/clip-computer-technology-and-robot.svg"
+              alt="robot-computer"
+            />
+            <img
+              class="headshot"
+              src="images/headshot2square.jpg"
+              alt="photo"
+            />
+            <img
+              class="zig-zag-mobile"
+              src="images/zig-zag.svg"
+              alt="zig-zag-design"
+            />
+          </div>
           <div class="links">
             <ul>
               <li>
