@@ -1,11 +1,27 @@
 /* css for portfolio page */
 
+/* General */
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin: 0 40px 20px 20px;
+}
+
+.project-image {
+  width: 200px;
+  height: 100px;
+}
 /* TOP 3 projects */
 .main-projects {
+  /* border: 5px solid aqua; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5vh;
 }
 
 .projectmain1 {
@@ -13,6 +29,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0 40px 20px 20px;
 }
 
 .projectmain2 {
@@ -20,32 +37,29 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0 40px 20px 20px;
 }
 
-@media (min-width: 423px) {
+@media (min-width: 483px) {
+  .projectmain1 p {
+    margin-left: 20px;
+  }
+
   .projectmain2 img {
     order: 1;
+  }
+
+  .projectmain2 p {
+    margin-right: 20px;
   }
 }
 
 /* Bottom projects */
 
 .secondary-project {
+  /* border: 5px solid goldenrod; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-
-/* General */
-.project-image {
-  width: 200px;
-  height: 100px;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
