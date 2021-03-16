@@ -71,6 +71,7 @@ body {
 .margin-top {
   margin-top: 100px;
 }
+
 .header ul {
   display: inline-block;
   padding: 0;
@@ -122,11 +123,6 @@ body {
   /* transition: 0.3s; */
   z-index: 999999;
 }
-
-/* Add to media query later */
-/* .nav-links a:hover::after {
-  width: 100%;
-} */
 
 .logo {
   position: absolute;
@@ -282,21 +278,164 @@ footer a {
 
 /*768px*/
 @media (min-width: 48rem) {
+  body {
+    background-size: 50%;
+  }
+
   h1 {
     color: aqua;
+  }
+
+  .mobile-menu-button {
+    display: none;
+  }
+
+  .mobile-menu-button-x {
+    display: none;
+  }
+
+  .closed {
+    visibility: visible;
+  }
+
+  .margin-top {
+    margin-top: 0px;
+  }
+
+  .header ul {
+    display: inline-block;
+    padding: 0;
+    z-index: 9999999;
+  }
+
+  .menu-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    position: unset;
+    margin-top: 1.2rem;
+  }
+
+  .inner-menu {
+    padding-left: 100px;
+  }
+
+  .nav-links {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .nav-links li {
+    display: inline-block;
+    padding: 10px;
+    z-index: 9999999;
+  }
+
+  .nav-links a {
+    position: relative;
+    color: black;
+    font-weight: bold;
+    line-height: 2;
+    font-size: 1.5rem;
+    z-index: 999999;
+  }
+
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    background-color: #fb3230;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: 2px;
+    transition: 0.3s;
+    z-index: 999999;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  .nav-links li:last-of-type a {
+    background-color: #fb3230;
+    display: inline-block;
+    color: white;
+    width: 8.6875rem;
+    border-radius: 100px;
+    text-align: center;
+  }
+
+  .nav-links li:last-of-type {
+    padding-left: 37vw;
+  }
+
+  .nav-links li:last-of-type a:hover {
+    transition: 0.1s;
+    background-color: black;
+    color: #fb3230;
+  }
+
+  .nav-links li:last-of-type a::after {
+    content: none;
+  }
+
+  .logo {
+    z-index: 99999999;
   }
 }
 
 /*1024px*/
 @media (min-width: 64rem) {
+  body {
+    background-size: 30%;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   h1 {
     color: olive;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li:last-of-type {
+    padding-left: 53vw;
   }
 }
 
 /*1392px*/
 @media (min-width: 87rem) {
+  body {
+    background-size: 15%;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
   h1 {
     color: goldenrod;
+  }
+
+  .logo {
+    position: absolute;
+    max-height: 84px;
+    max-width: 53px;
+    top: 40px;
+    left: 150px;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+
+  .inner-menu {
+    margin-top: 20px;
+    padding-left: 200px;
+  }
+
+  .nav-links li:last-of-type {
+    padding-left: 57vw;
   }
 }
