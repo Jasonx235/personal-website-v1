@@ -53,6 +53,12 @@ body {
   z-index: 999999;
 }
 
+.CTA-button:hover {
+  transition: 0.1s;
+  background-color: black;
+  color: white;
+}
+
 .CTA-button img {
   position: absolute;
   height: 1.375rem;
@@ -315,19 +321,31 @@ footer a {
     background-color: #fb3230;
     display: inline-block;
     color: white;
+    height: 2.625rem;
     width: 8.6875rem;
+    font-size: 1rem;
     border-radius: 100px;
     text-align: center;
+    text-align: left;
+    padding-top: 0.4rem;
+    padding-left: 18px;
+    font-weight: bold;
+  }
+  .nav-links li:last-of-type a img {
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    margin-left: 8px;
+    top: 5px;
   }
 
   .nav-links li:last-of-type {
     padding-left: 37vw;
   }
-
   .nav-links li:last-of-type a:hover {
     transition: 0.1s;
     background-color: black;
-    color: #fb3230;
+    color: white;
   }
 
   .nav-links li:last-of-type a::after {
@@ -371,9 +389,6 @@ footer a {
     color: goldenrod;
   }
 
-  svg {
-    preserveaspectratio: "none";
-  }
   .wrapper {
     padding-left: 150px;
     padding-right: 150px;
