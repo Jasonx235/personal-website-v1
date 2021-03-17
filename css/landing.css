@@ -38,3 +38,49 @@ h1 span {
   height: 70%;
   width: 70%;
 }
+
+.CTA-landing-position {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/*1392px*/
+@media (min-width: 87rem) {
+  .hero .container {
+    /* border: 2px solid salmon; */
+    flex-direction: row;
+  }
+
+  .CTA-landing-position {
+    justify-content: left;
+    position: relative;
+    left: 250px;
+    top: -75px;
+  }
+
+  .left-hero {
+    /* border: 2px solid orange; */
+    margin-left: 250px;
+  }
+
+  .left-hero h1 {
+    text-align: left;
+    font-size: 70px;
+  }
+
+  .left-hero p {
+    text-align: center;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+
+  .right-hero {
+    margin-left: 30vmin;
+  }
+
+  .right-hero img {
+    height: 410px;
+    width: 510px;
+  }
+}

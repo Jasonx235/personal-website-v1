@@ -1,6 +1,10 @@
 /* css for portfolio page */
 
 /* General */
+.hero {
+  text-align: center;
+}
+
 .project {
   display: flex;
   flex-direction: column;
