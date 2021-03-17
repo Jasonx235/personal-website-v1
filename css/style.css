@@ -28,6 +28,9 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  text-align: center;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -111,6 +114,10 @@ body {
   line-height: 2;
   font-size: 1.5rem;
   z-index: 999999;
+}
+
+.nav-links li a img {
+  display: none;
 }
 
 .nav-links a::after {
@@ -299,6 +306,10 @@ footer a {
     line-height: 2;
     font-size: 1.5rem;
     z-index: 999999;
+  }
+
+  .nav-links li a img {
+    display: unset;
   }
 
   .nav-links a::after {

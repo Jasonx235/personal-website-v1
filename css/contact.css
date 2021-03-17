@@ -1,4 +1,7 @@
 /* CSS specific for contact page */
+h1 {
+  font-size: 7vmin;
+}
 .contact-form {
   display: flex;
   flex-direction: column;

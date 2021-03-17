@@ -1,6 +1,15 @@
 /* css for portfolio page */
 
 /* General */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 7vmin;
+}
 .hero {
   text-align: center;
 }
@@ -11,20 +20,22 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
-  margin: 0 20px 40px 20px;
 }
 
 .project-image {
   width: 200px;
   height: 100px;
 }
+
 /* TOP 3 projects */
 .main-projects {
+  border: 2px solid salmon;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 5vh;
+  width: 70vw;
 }
 
 .projectmain1 {
@@ -64,11 +75,17 @@
 /* Bottom projects */
 
 .secondary-project {
-  /* border: 5px solid goldenrod; */
+  border: 2px solid goldenrod;
+  width: 70vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.secondary-project .project {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project p {
@@ -93,4 +110,12 @@
 .project:nth-of-type(3) p,
 .project:nth-of-type(4) p {
   background-color: rgba(108, 179, 246, 0.65);
+}
+
+/* Media Queries */
+
+@media (min-width: 48rem) {
+  .secondary-project .project {
+    flex-basis: 33.333333%;
+  }
 }
