@@ -134,6 +134,18 @@ footer {
     padding-right: 150px;
   }
 
+  .secondary .container {
+    margin-top: -50px;
+  }
+
+  .info {
+    height: 700px;
+  }
+
+  .info .container {
+    margin-top: 150px;
+  }
+
   .headshot {
     margin-top: 50px;
     right: 0;
@@ -171,16 +183,12 @@ footer {
     order: 1;
   }
 
-  .zig-zag-container {
-    margin-top: 150px;
-  }
-
   .info-robot {
     top: -150px;
     left: -300px;
   }
 
   footer {
-    margin-top: 200px;
+    margin-top: 250px;
   }
 }
