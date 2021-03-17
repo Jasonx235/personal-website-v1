@@ -74,7 +74,6 @@ h2 {
 
 footer {
   position: relative;
-  top: -250px;
 }
 
 @media (min-width: 48rem) {
@@ -161,7 +160,7 @@ footer {
   .left-about {
     width: 300px;
     height: 500px;
-    margin-left: 80px;
+    margin-left: 100px;
     margin-right: 200px;
   }
   .right-about {
@@ -186,9 +185,5 @@ footer {
   .info-robot {
     top: -150px;
     left: -300px;
-  }
-
-  footer {
-    margin-top: 250px;
   }
 }
