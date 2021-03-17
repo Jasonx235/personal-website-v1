@@ -53,7 +53,7 @@ h1 {
   align-items: center;
   height: 80px;
   width: 200px;
-  background-color: rgba(251, 50, 48, 0.65);
+  background-color: rgba(251, 50, 48, 0.75);
   text-align: center;
   box-shadow: 0px 2px 5px black;
 }
@@ -63,7 +63,7 @@ h1 {
 }
 
 .projectmain1:nth-of-type(3) p {
-  background-color: rgba(108, 179, 246, 0.65);
+  background-color: rgba(108, 179, 246, 0.75);
 }
 
 @media (min-width: 440px) {
@@ -101,7 +101,7 @@ h1 {
 
 .project:nth-of-type(1) p,
 .project:nth-of-type(6) p {
-  background-color: rgba(251, 50, 48, 0.65);
+  background-color: rgba(251, 50, 48, 0.75);
 }
 .project:nth-of-type(2) p,
 .project:nth-of-type(5) p {
@@ -109,7 +109,7 @@ h1 {
 }
 .project:nth-of-type(3) p,
 .project:nth-of-type(4) p {
-  background-color: rgba(108, 179, 246, 0.65);
+  background-color: rgba(108, 179, 246, 0.75);
 }
 
 /* Media Queries */
@@ -118,4 +118,33 @@ h1 {
   .secondary-project .project {
     flex-basis: 33.333333%;
   }
+}
+
+@media (min-width: 64rem) {
+  .project p {
+    width: 300px;
+    height: 100px;
+  }
+  .project-image {
+    width: 300px;
+    height: 186px;
+  }
+  .projectmain1 img {
+    width: 40%;
+    height: 20vh;
+
+    max-width: 600px;
+    max-height: 255px;
+  }
+
+  .projectmain1 p {
+    width: 60%;
+    height: 16vh;
+
+    max-width: 830px;
+    max-height: 200px;
+  }
+}
+
+@media (min-width: 87rem) {
 }

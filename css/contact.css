@@ -59,6 +59,7 @@ h1 {
 }
 input[type="submit"] {
   background-color: #fb3230;
+  cursor: pointer;
   border: 0px;
   color: white;
   font-size: 1rem;
@@ -66,6 +67,10 @@ input[type="submit"] {
   width: 6rem;
   border-radius: 100px;
   font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: black;
 }
 
 .headshot {
