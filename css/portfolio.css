@@ -46,7 +46,7 @@ h1 {
   margin: 0 20px 40px 20px;
 }
 
-.projectmain1 p {
+.project-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,11 +58,16 @@ h1 {
   box-shadow: 0px 2px 5px black;
 }
 
-.projectmain1:nth-of-type(2) p {
+.projectmain1 .project-link img {
+  height: 30px;
+  width: 30px;
+}
+
+.projectmain1:nth-of-type(2) .project-content {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
-.projectmain1:nth-of-type(3) p {
+.projectmain1:nth-of-type(3) .project-content {
   background-color: rgba(108, 179, 246, 0.75);
 }
 
@@ -88,7 +93,7 @@ h1 {
   margin-right: auto;
 }
 
-.project p {
+.project .project-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,16 +104,16 @@ h1 {
   box-shadow: 0px 2px 5px black;
 }
 
-.project:nth-of-type(1) p,
-.project:nth-of-type(6) p {
+.project:nth-of-type(1) .project-content,
+.project:nth-of-type(6) .project-content {
   background-color: rgba(251, 50, 48, 0.75);
 }
-.project:nth-of-type(2) p,
-.project:nth-of-type(5) p {
+.project:nth-of-type(2) .project-content,
+.project:nth-of-type(5) .project-content {
   background-color: rgba(255, 255, 255, 0.85);
 }
-.project:nth-of-type(3) p,
-.project:nth-of-type(4) p {
+.project:nth-of-type(3) .project-content,
+.project:nth-of-type(4) .project-content {
   background-color: rgba(108, 179, 246, 0.75);
 }
 
@@ -121,7 +126,7 @@ h1 {
 }
 
 @media (min-width: 64rem) {
-  .project p {
+  .project .project-content {
     width: 300px;
     height: 100px;
   }
@@ -137,7 +142,7 @@ h1 {
     max-height: 255px;
   }
 
-  .projectmain1 p {
+  .projectmain1 .project-content {
     width: 60%;
     height: 16vh;
 
