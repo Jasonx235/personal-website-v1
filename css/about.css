@@ -1,8 +1,4 @@
 /* Specific CSS for about page */
-.wrapper {
-  /* border: 5px solid goldenrod; */
-  height: 1950px;
-}
 
 h1 {
   font-size: 8vmin;
@@ -32,6 +28,7 @@ h2 {
 .right-about {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 2rem;
 }
@@ -78,4 +75,112 @@ h2 {
 footer {
   position: relative;
   top: -250px;
+}
+
+@media (min-width: 48rem) {
+  .right-about p {
+    font-size: 3vmin;
+  }
+}
+
+@media (min-width: 64rem) {
+  .links ul {
+    margin-top: 2rem;
+  }
+
+  .links ul li {
+    display: inline-block;
+    margin-left: 75px;
+  }
+  .right-about p {
+    font-size: 2.5vmin;
+  }
+
+  .skills {
+    margin-top: 50px;
+  }
+
+  .skills li {
+    display: inline-block;
+    margin-left: 75px;
+  }
+
+  h2 {
+    font-size: 4vmin;
+    font-weight: 800;
+    margin-top: 1.25rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 87rem) {
+  h1 {
+    font-size: 60px;
+    white-space: nowrap;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .main-about .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .headshot {
+    margin-top: 50px;
+    right: 0;
+    left: 0;
+  }
+
+  .links {
+    position: relative;
+    right: 0;
+    top: -140px;
+  }
+
+  .left-about {
+    width: 300px;
+    height: 500px;
+    margin-left: 80px;
+    margin-right: 200px;
+  }
+  .right-about {
+    height: 500px;
+    width: 1000px;
+    margin-right: 150px;
+  }
+
+  .right-about p {
+    font-size: 18px;
+    order: 1;
+
+    position: relative;
+    top: -50px;
+  }
+
+  .CTA-button {
+    padding-top: 0.7rem;
+    order: 1;
+  }
+
+  .zig-zag-container {
+    margin-top: 150px;
+  }
+
+  .info-robot {
+    top: -150px;
+    left: -300px;
+  }
+
+  footer {
+    margin-top: 200px;
+  }
 }
