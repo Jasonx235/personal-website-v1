@@ -250,9 +250,9 @@ footer a {
     background-size: 50%;
   }
 
-  h1 {
+  /* h1 {
     color: aqua;
-  }
+  } */
 
   .mobile-menu-button {
     display: none;
@@ -374,9 +374,9 @@ footer a {
     background-size: 30%;
   }
 
-  h1 {
+  /* h1 {
     color: olive;
-  }
+  } */
 
   .wrapper {
     display: flex;
@@ -396,9 +396,9 @@ footer a {
   body {
     background-size: 15%;
   }
-  h1 {
+  /* h1 {
     color: goldenrod;
-  }
+  } */
 
   .wrapper {
     padding-left: 150px;

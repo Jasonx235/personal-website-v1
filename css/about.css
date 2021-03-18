@@ -154,7 +154,7 @@ footer {
   .links {
     position: relative;
     right: 0;
-    top: -140px;
+    top: -110px;
   }
 
   .left-about {
@@ -170,11 +170,11 @@ footer {
   }
 
   .right-about p {
-    font-size: 18px;
+    font-size: 22px;
     order: 1;
 
     position: relative;
-    top: -50px;
+    top: -40px;
   }
 
   .CTA-button {
