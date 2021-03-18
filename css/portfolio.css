@@ -27,6 +27,15 @@ h1 {
   height: 100px;
 }
 
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.description {
+  display: none;
+}
+
 /* TOP 3 projects */
 .main-projects {
   border: 2px solid salmon;
@@ -53,25 +62,40 @@ h1 {
   align-items: center;
   height: 80px;
   width: 200px;
-  background-color: rgba(251, 50, 48, 0.75);
   text-align: center;
   box-shadow: 0px 2px 5px black;
 }
 
-.projectmain1 .project-link img {
+.project-link img {
   height: 30px;
   width: 30px;
+  margin: 10px 20px 0px 20px;
+}
+
+.projectmain1:nth-of-type(1) .project-content {
+  background-color: rgba(251, 50, 48, 0.65);
+}
+.projectmain1:nth-of-type(1) .project-content:hover {
+  background-color: rgba(251, 50, 48, 0.85);
 }
 
 .projectmain1:nth-of-type(2) .project-content {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.projectmain1:nth-of-type(2) .project-content:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .projectmain1:nth-of-type(3) .project-content {
-  background-color: rgba(108, 179, 246, 0.75);
+  background-color: rgba(108, 179, 246, 0.65);
 }
 
-@media (min-width: 440px) {
+.projectmain1:nth-of-type(3) .project-content:hover {
+  background-color: rgba(108, 179, 246, 0.85);
+}
+
+@media (min-width: 635px) {
   .projectmain1:nth-of-type(2) img {
     order: 1;
   }
@@ -80,7 +104,6 @@ h1 {
 /* Bottom projects */
 
 .secondary-project {
-  border: 2px solid goldenrod;
   width: 70vw;
   display: flex;
   flex-wrap: wrap;
@@ -106,15 +129,31 @@ h1 {
 
 .project:nth-of-type(1) .project-content,
 .project:nth-of-type(6) .project-content {
-  background-color: rgba(251, 50, 48, 0.75);
+  background-color: rgba(251, 50, 48, 0.65);
 }
+
+.project:nth-of-type(1) .project-content:hover,
+.project:nth-of-type(6) .project-content:hover {
+  background-color: rgba(251, 50, 48, 0.85);
+}
+
 .project:nth-of-type(2) .project-content,
 .project:nth-of-type(5) .project-content {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.project:nth-of-type(2) .project-content:hover,
+.project:nth-of-type(5) .project-content:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
 .project:nth-of-type(3) .project-content,
 .project:nth-of-type(4) .project-content {
-  background-color: rgba(108, 179, 246, 0.75);
+  background-color: rgba(108, 179, 246, 0.65);
+}
+
+.project:nth-of-type(3) .project-content:hover,
+.project:nth-of-type(4) .project-content:hover {
+  background-color: rgba(108, 179, 246, 0.85);
 }
 
 /* Media Queries */
@@ -126,6 +165,10 @@ h1 {
 }
 
 @media (min-width: 64rem) {
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
   .project .project-content {
     width: 300px;
     height: 100px;
@@ -134,12 +177,18 @@ h1 {
     width: 300px;
     height: 186px;
   }
-  .projectmain1 img {
+  .projectmain1 .project-image {
     width: 40%;
     height: 20vh;
 
     max-width: 600px;
     max-height: 255px;
+  }
+
+  .description {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .projectmain1 .project-content {
