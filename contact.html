@@ -52,7 +52,11 @@
       </div>
       <section class="contact-form margin-top">
         <h1>Send Me A Message!</h1>
-        <form class="main-form">
+        <form
+          class="main-form"
+          action="https://formspree.io/f/xgepggpq"
+          method="POST"
+        >
           <div class="mobile-form">
             <label for="firstName">First Name* </label>
             <input type="text" name="firstName" id="firstName" required />
@@ -63,7 +67,13 @@
           </div>
           <div class="mobile-form">
             <label for="email">Email* </label>
-            <input type="email" name="email" id="email" required />
+            <input
+              type="email"
+              name="email"
+              name="_replyto"
+              id="email"
+              required
+            />
           </div>
           <div class="mobile-form">
             <label for="subject">Subject </label>
