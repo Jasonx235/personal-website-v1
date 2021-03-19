@@ -137,10 +137,6 @@ footer {
     margin-top: -50px;
   }
 
-  .info {
-    height: 700px;
-  }
-
   .info .container {
     margin-top: 150px;
   }
@@ -183,7 +179,7 @@ footer {
   }
 
   .info-robot {
-    top: -150px;
-    left: -300px;
+    top: -230px;
+    left: -400px;
   }
 }
