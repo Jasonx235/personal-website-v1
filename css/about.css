@@ -11,6 +11,11 @@ h2 {
   text-align: center;
 }
 
+.main-about {
+  /* border: 2px solid salmon; */
+  width: 100%;
+}
+
 .headshot-about {
   margin-top: 2rem;
 }
@@ -20,12 +25,14 @@ h2 {
 }
 
 .left-about {
+  /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .right-about {
+  /* border: 2px solid blueviolet; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +45,13 @@ h2 {
 }
 
 .links-about {
-  margin-top: 2.5rem;
+  margin-top: 40px;
+  top: 0;
+}
+
+.secondary {
+  /* border: 2px solid teal; */
+  width: 100%;
 }
 
 .skills {
@@ -68,128 +81,127 @@ h2 {
   right: 10px;
 }
 
-.zig-zag-container {
-  margin-top: 20px;
-}
-
 footer {
   position: relative;
-}
-
-@media (min-width: 48rem) {
-  .right-about p {
-    font-size: 3vmin;
-  }
-}
-
-@media (min-width: 64rem) {
-  .links ul {
-    margin-top: 2rem;
-  }
-
-  .links ul li {
-    display: inline-block;
-    margin-left: 75px;
-  }
-  .right-about p {
-    font-size: 2.5vmin;
-  }
-
-  .skills {
-    margin-top: 50px;
-  }
-
-  .skills li {
-    display: inline-block;
-    margin-left: 75px;
-  }
-
-  h2 {
-    font-size: 4vmin;
-    font-weight: 800;
-    margin-top: 1.25rem;
-    text-align: center;
-  }
 }
 
 /* Media Queries */
 
 /*768px*/
 @media (min-width: 48rem) {
+  .main-about {
+    margin-top: 50px;
+  }
+
+  .right-about p {
+    font-size: 3vmin;
+  }
 }
 
 /*1024px*/
 @media (min-width: 64rem) {
-}
+  h2 {
+    font-size: 3vmin;
+    font-weight: 800;
+    margin-top: 1.25rem;
+    text-align: center;
+  }
 
-@media (min-width: 87rem) {
-  h1 {
+  .main-about .container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .headshot {
+    height: 250px;
+    width: 250px;
+  }
+
+  .CTA-about {
+    margin: 0;
+  }
+
+  .left-about h1 {
     font-size: 60px;
     white-space: nowrap;
   }
 
+  .right-about {
+    justify-content: space-between;
+    padding: 0;
+    margin: 10px 0 0 0;
+
+    max-width: 600px;
+  }
+  .right-about p {
+    font-size: 18px;
+  }
+
+  .links-about {
+    margin: 0;
+    order: -1;
+  }
+
+  .skills {
+    margin-top: 50px;
+  }
+  .skills li {
+    display: inline-block;
+  }
+
+  .skills li:not(:first-of-type) {
+    margin-left: 65px;
+  }
+}
+
+/*1392px*/
+@media (min-width: 87rem) {
   h2 {
     font-size: 32px;
   }
 
-  .main-about .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-
-    margin-top: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
+  footer {
+    margin-top: 0;
   }
 
-  .secondary .container {
-    margin-top: -50px;
+  .main-about .container {
+    justify-content: space-between;
+  }
+
+  .left-about {
+    margin-left: 2.5rem;
+  }
+
+  .right-about {
+    margin-right: 2.5rem;
   }
 
   .info .container {
-    margin-top: 150px;
+    margin-top: 75px;
   }
 
   .headshot {
-    margin-top: 50px;
+    margin-top: 20px;
     right: 0;
     left: 0;
   }
 
-  .links {
-    position: relative;
-    right: 0;
-    top: -110px;
+  .links li:not(:first-of-type) {
+    margin-left: 120px;
   }
 
-  .left-about {
-    width: 300px;
-    height: 500px;
-    margin-left: 100px;
-    margin-right: 200px;
-  }
   .right-about {
-    height: 500px;
-    width: 1000px;
-    margin-right: 150px;
+    max-width: 875px;
   }
 
   .right-about p {
+    margin-top: 50px;
     font-size: 22px;
-    order: 1;
-
-    position: relative;
-    top: -40px;
-  }
-
-  .CTA-button {
-    padding-top: 0.7rem;
-    order: 1;
   }
 
   .info-robot {
-    top: -230px;
+    top: -150px;
     left: -400px;
   }
 }

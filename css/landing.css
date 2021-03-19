@@ -89,6 +89,10 @@ h1 span {
 
 /*1392px*/
 @media (min-width: 87rem) {
+  .hero {
+    margin-top: 0;
+  }
+
   .hero .container {
     justify-content: space-between;
   }

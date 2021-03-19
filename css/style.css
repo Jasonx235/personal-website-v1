@@ -250,7 +250,7 @@ h1 {
 
 footer {
   font-size: medium;
-  margin-top: 0px;
+  margin-top: 50px;
   margin-bottom: 20px;
   color: black;
   text-align: center;
@@ -420,6 +420,10 @@ footer a {
     padding-bottom: 15vh;
   }
 
+  .zig-zag-mobile {
+    top: 0px;
+  }
+
   .links {
     display: flex;
     justify-content: center;
@@ -446,6 +450,10 @@ footer a {
     color: goldenrod;
   }
 
+  footer {
+    margin-top: 100px;
+  }
+
   .nav-links {
     width: 100%;
   }
@@ -467,12 +475,13 @@ footer a {
     transform: scaleX(-1);
 
     position: relative;
-    top: -160px;
+    top: -150px;
     left: -20px;
   }
 
   .zig-zag-container {
-    margin-top: 150px;
+    padding: 0;
+    margin-top: 75px;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
@@ -480,7 +489,7 @@ footer a {
   }
 
   .links {
-    top: 130px;
+    top: 180px;
   }
 
   .full-width {
@@ -500,7 +509,7 @@ footer a {
     width: 250px;
 
     position: relative;
-    top: -50px;
+    top: 0;
     left: 390px;
   }
 }
