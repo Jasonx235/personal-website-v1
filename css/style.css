@@ -22,6 +22,9 @@ html {
 body {
   /* border: 5px solid goldenrod; */
   width: 100vw;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Poppins", sans-serif;
   background-image: url("../images/worn_dots_@2X.png");
   background-size: 70%;
@@ -36,11 +39,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* position: relative;
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto; */
 }
 
 .container {
@@ -448,7 +446,7 @@ footer a {
 
     position: relative;
     top: -150px;
-    left: -20px;
+    left: 150px;
   }
 
   .zig-zag-container {
@@ -468,7 +466,7 @@ footer a {
 
     position: relative;
     top: -20px;
-    left: -100px;
+    left: 390px;
   }
 
   .zig-zag-mobile {
@@ -486,13 +484,13 @@ footer a {
     margin-top: 0rem;
 
     position: relative;
-    top: -90px;
-    right: -450px;
+    top: 150px;
+    right: 175px;
   }
 
   .links li {
     display: inline-block;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-left: 75px;
   }
 }
