@@ -276,10 +276,10 @@ footer a {
   body {
     background-size: 50%;
   }
-
+  /* 
   h1 {
     color: aqua;
-  }
+  } */
 
   .start {
     display: inline-block;
@@ -411,10 +411,10 @@ footer a {
   body {
     background-size: 30%;
   }
-
+  /* 
   h1 {
     color: olive;
-  }
+  } */
 
   .zig-zag-container {
     padding-bottom: 15vh;
@@ -446,9 +446,9 @@ footer a {
   body {
     background-size: 15%;
   }
-  h1 {
+  /* h1 {
     color: goldenrod;
-  }
+  } */
 
   footer {
     margin-top: 100px;
