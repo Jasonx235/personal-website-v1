@@ -62,7 +62,7 @@ h1 {
   width: 8.6875rem;
   border-radius: 100px;
   text-align: left;
-  padding-top: 0.6rem;
+  padding-top: 11px;
   padding-left: 20px;
   font-weight: bold;
   z-index: 999999;
@@ -79,7 +79,7 @@ h1 {
   height: 1.375rem;
   width: 1.375rem;
   margin-left: 10px;
-  top: 8px;
+  top: 10px;
 }
 
 /* Header Section */
@@ -415,6 +415,26 @@ footer a {
   h1 {
     color: olive;
   }
+
+  .zig-zag-container {
+    padding-bottom: 15vh;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+
+    position: relative;
+    top: 20px;
+    right: 0px;
+  }
+
+  .links li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 75px;
+  }
 }
 
 /*1392px*/
@@ -447,7 +467,7 @@ footer a {
     transform: scaleX(-1);
 
     position: relative;
-    top: -220px;
+    top: -160px;
     left: -20px;
   }
 
@@ -457,6 +477,10 @@ footer a {
     justify-content: space-around;
     width: 100%;
     position: relative;
+  }
+
+  .links {
+    top: 130px;
   }
 
   .full-width {
@@ -476,23 +500,7 @@ footer a {
     width: 250px;
 
     position: relative;
-    top: -90px;
+    top: -50px;
     left: 390px;
-  }
-
-  .links {
-    display: flex;
-    justify-content: center;
-    margin-top: 0rem;
-
-    position: relative;
-    top: 80px;
-    right: 0px;
-  }
-
-  .links li {
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 75px;
   }
 }
