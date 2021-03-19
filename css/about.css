@@ -112,6 +112,16 @@ footer {
   }
 }
 
+/* Media Queries */
+
+/*768px*/
+@media (min-width: 48rem) {
+}
+
+/*1024px*/
+@media (min-width: 64rem) {
+}
+
 @media (min-width: 87rem) {
   h1 {
     font-size: 60px;

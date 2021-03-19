@@ -151,12 +151,14 @@ h1 {
 
 /* Media Queries */
 
+/*768px*/
 @media (min-width: 48rem) {
   .secondary-project .project {
     flex-basis: 33.333333%;
   }
 }
 
+/*1024px*/
 @media (min-width: 64rem) {
   .title {
     font-size: 24px;

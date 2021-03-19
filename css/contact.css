@@ -81,6 +81,17 @@ input[type="submit"]:hover {
   display: none;
 }
 
+/* Media Queries */
+
+/*768px*/
+@media (min-width: 48rem) {
+}
+
+/*1024px*/
+@media (min-width: 64rem) {
+}
+
+/* 1392px */
 @media (min-width: 87rem) {
   h1 {
     font-size: 72px;

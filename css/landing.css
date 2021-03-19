@@ -44,6 +44,16 @@ h1 span {
   margin-top: 1rem;
 }
 
+/* Media Queries */
+
+/*768px*/
+@media (min-width: 48rem) {
+}
+
+/*1024px*/
+@media (min-width: 64rem) {
+}
+
 /*1392px*/
 @media (min-width: 87rem) {
   .hero .container {
