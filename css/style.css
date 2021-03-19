@@ -21,7 +21,7 @@ html {
 
 body {
   /* border: 5px solid goldenrod; */
-  width: 100vw;
+  width: 100%;
   font-family: "Poppins", sans-serif;
   background-image: url("../images/worn_dots_@2X.png");
   background-size: 70%;
@@ -36,18 +36,18 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* position: relative;
-  max-width: 1920px;
+  width: auto;
+  max-width: 1392px;
+  border: 2px solid salmon;
   margin-left: auto;
-  margin-right: auto; */
+  margin-right: auto;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 /* Button Styles*/
@@ -62,7 +62,7 @@ h1 {
   width: 8.6875rem;
   border-radius: 100px;
   text-align: left;
-  padding-top: 0.6rem;
+  padding-top: 11px;
   padding-left: 20px;
   font-weight: bold;
   z-index: 999999;
@@ -70,7 +70,7 @@ h1 {
 
 .CTA-button:hover {
   transition: 0.1s;
-  background-color: black;
+  background-color: #111111;
   color: white;
 }
 
@@ -79,10 +79,13 @@ h1 {
   height: 1.375rem;
   width: 1.375rem;
   margin-left: 10px;
-  top: 8px;
+  top: 10px;
 }
 
 /* Header Section */
+.header {
+  width: 100%;
+}
 
 .margin-top {
   margin-top: 100px;
@@ -95,7 +98,7 @@ h1 {
 }
 
 .menu-container {
-  position: fixed;
+  width: 100%;
   margin-top: 1.2rem;
   margin-left: auto;
   margin-right: auto;
@@ -103,12 +106,20 @@ h1 {
 }
 
 .inner-menu {
-  position: relative;
+  position: fixed;
+  width: 95%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .nav-links {
-  width: 95vmin;
+  width: 100%;
   background-color: rgba(236, 236, 236, 0.99);
   border-radius: 5px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-links li {
@@ -121,7 +132,7 @@ h1 {
 
 .nav-links a {
   position: relative;
-  color: black;
+  color: #111111;
   font-weight: bold;
   line-height: 2;
   font-size: 1.5rem;
@@ -143,11 +154,12 @@ h1 {
   z-index: 999999;
 }
 
-.logo {
+.start {
   position: absolute;
-  top: 1.5rem;
-  left: 2.5rem;
+  left: 2rem;
+}
 
+.logo {
   width: 2rem;
   height: 3.25rem;
   transform: rotate(20deg);
@@ -178,6 +190,9 @@ h1 {
 }
 
 /* Info Section */
+.info {
+  width: 100%;
+}
 
 .info-robot {
   display: none;
@@ -199,11 +214,11 @@ h1 {
 
 .zig-zag-mobile {
   width: 300%;
-  height: 200%;
+  height: 100%;
   position: absolute;
   z-index: -999;
-  top: -100px;
-  right: 0px;
+  top: -75px;
+  right: -50px;
 }
 
 .links {
@@ -218,7 +233,7 @@ h1 {
 }
 .links a {
   position: relative;
-  color: black;
+  color: #111111;
   font-weight: bold;
   line-height: 3;
   font-size: 1rem;
@@ -236,13 +251,13 @@ h1 {
 footer {
   font-size: medium;
   margin-top: 50px;
-  margin-bottom: 50px;
-  color: black;
+  margin-bottom: 20px;
+  color: #111111;
   text-align: center;
 }
 
 footer a {
-  color: black;
+  color: #111111;
   font-size: x-small;
 }
 
@@ -262,9 +277,17 @@ footer a {
     background-size: 50%;
   }
 
-  /* h1 {
+  h1 {
     color: aqua;
-  } */
+  }
+
+  .start {
+    display: inline-block;
+    position: relative;
+    left: 4rem;
+    top: 1rem;
+    z-index: 99999999;
+  }
 
   .mobile-menu-button {
     display: none;
@@ -291,17 +314,22 @@ footer a {
   .menu-container {
     position: relative;
     display: block;
-    width: 100%;
     position: unset;
-    margin-top: 1.2rem;
   }
 
   .inner-menu {
+    display: inline-block;
+    position: relative;
+    width: 95%;
     padding-left: 100px;
   }
 
+  .inner-menu ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .nav-links {
-    width: 100%;
     background-color: transparent;
   }
 
@@ -313,7 +341,7 @@ footer a {
 
   .nav-links a {
     position: relative;
-    color: black;
+    color: #111111;
     font-weight: bold;
     line-height: 2;
     font-size: 1.5rem;
@@ -340,7 +368,13 @@ footer a {
     width: 100%;
   }
 
+  .nav-links li:last-of-type {
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+
   .nav-links li:last-of-type a {
+    position: relative;
     background-color: #fb3230;
     display: inline-block;
     color: white;
@@ -361,22 +395,14 @@ footer a {
     margin-left: 8px;
     top: 5px;
   }
-
-  .nav-links li:last-of-type {
-    padding-left: 37vw;
-  }
   .nav-links li:last-of-type a:hover {
     transition: 0.1s;
-    background-color: black;
+    background-color: #111111;
     color: white;
   }
 
   .nav-links li:last-of-type a::after {
     content: none;
-  }
-
-  .logo {
-    z-index: 99999999;
   }
 }
 
@@ -386,20 +412,32 @@ footer a {
     background-size: 30%;
   }
 
-  /* h1 {
+  h1 {
     color: olive;
-  } */
-
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
   }
 
-  .nav-links li:last-of-type {
-    padding-left: 53vw;
+  .zig-zag-container {
+    padding-bottom: 15vh;
+  }
+
+  .zig-zag-mobile {
+    top: 0px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+
+    position: relative;
+    top: 20px;
+    right: 0px;
+  }
+
+  .links li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 75px;
   }
 }
 
@@ -408,34 +446,24 @@ footer a {
   body {
     background-size: 15%;
   }
-  /* h1 {
+  h1 {
     color: goldenrod;
-  } */
-
-  .wrapper {
-    padding-left: 150px;
-    padding-right: 150px;
   }
 
-  .logo {
-    position: absolute;
-    max-height: 84px;
-    max-width: 53px;
-    top: 40px;
-    left: 250px;
+  footer {
+    margin-top: 100px;
   }
 
   .nav-links {
     width: 100%;
   }
-
-  .inner-menu {
-    margin-top: 20px;
-    padding-left: 320px;
+  .nav-links li:last-of-type {
+    margin-right: 0rem;
   }
 
-  .nav-links li:last-of-type {
-    padding-left: 49vw;
+  .start {
+    left: 2rem;
+    top: 1rem;
   }
 
   /* Info Section */
@@ -452,13 +480,27 @@ footer a {
   }
 
   .zig-zag-container {
-    margin-top: 150px;
-
+    padding: 0;
+    margin-top: 75px;
     flex-direction: row;
     justify-content: space-around;
-
     width: 100%;
     position: relative;
+  }
+
+  .links {
+    top: 180px;
+  }
+
+  .full-width {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: absolute;
+    right: 50%;
+    width: 100vw;
+    z-index: -999;
   }
 
   .headshot {
@@ -467,32 +509,7 @@ footer a {
     width: 250px;
 
     position: relative;
-    top: -20px;
-    left: -100px;
-  }
-
-  .zig-zag-mobile {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -999;
-    top: 0px;
-    left: 0px;
-  }
-
-  .links {
-    display: flex;
-    justify-content: center;
-    margin-top: 0rem;
-
-    position: relative;
-    top: -90px;
-    right: -450px;
-  }
-
-  .links li {
-    display: inline-block;
-    margin-top: 0px;
-    margin-left: 75px;
+    top: 0;
+    left: 390px;
   }
 }

@@ -1,6 +1,11 @@
 /* landing page styles */
 
 /* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
 .left-hero {
   display: flex;
@@ -44,42 +49,79 @@ h1 span {
   margin-top: 1rem;
 }
 
-/*1392px*/
-@media (min-width: 87rem) {
+/* Media Queries */
+
+/*768px*/
+@media (min-width: 48rem) {
+  .hero {
+    margin-top: 50px;
+  }
+}
+
+/*1024px*/
+@media (min-width: 64rem) {
   .hero .container {
     /* border: 2px solid salmon; */
     flex-direction: row;
+    justify-content: space-around;
   }
 
   .CTA-landing-position {
-    justify-content: left;
-    position: relative;
-    left: 250px;
-    top: -75px;
-  }
-
-  .left-hero {
-    /* border: 2px solid orange; */
-    margin-left: 250px;
+    align-self: center;
   }
 
   .left-hero h1 {
     text-align: left;
-    font-size: 71px;
+    font-size: 60px;
   }
 
   .left-hero p {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     white-space: nowrap;
   }
 
+  .right-hero img {
+    height: 310px;
+    width: 410px;
+  }
+}
+
+/*1392px*/
+@media (min-width: 87rem) {
+  .hero {
+    margin-top: 0;
+  }
+
+  .hero .container {
+    justify-content: space-between;
+  }
+
+  .left-hero {
+    margin-left: 2rem;
+  }
+  .left-hero h1 {
+    font-size: 72px;
+  }
+
+  .left-hero p {
+    font-size: 30px;
+  }
+
   .right-hero {
-    margin-left: 30vmin;
+    margin-right: 2rem;
   }
 
   .right-hero img {
     height: 410px;
     width: 510px;
+  }
+
+  .CTA-landing-position {
+    align-self: flex-start;
+
+    position: relative;
+    top: -10vh;
+    left: 2rem;
   }
 }
