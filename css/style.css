@@ -70,7 +70,7 @@ h1 {
 
 .CTA-button:hover {
   transition: 0.1s;
-  background-color: black;
+  background-color: #111111;
   color: white;
 }
 
@@ -132,7 +132,7 @@ h1 {
 
 .nav-links a {
   position: relative;
-  color: black;
+  color: #111111;
   font-weight: bold;
   line-height: 2;
   font-size: 1.5rem;
@@ -233,7 +233,7 @@ h1 {
 }
 .links a {
   position: relative;
-  color: black;
+  color: #111111;
   font-weight: bold;
   line-height: 3;
   font-size: 1rem;
@@ -252,12 +252,12 @@ footer {
   font-size: medium;
   margin-top: 50px;
   margin-bottom: 20px;
-  color: black;
+  color: #111111;
   text-align: center;
 }
 
 footer a {
-  color: black;
+  color: #111111;
   font-size: x-small;
 }
 
@@ -341,7 +341,7 @@ footer a {
 
   .nav-links a {
     position: relative;
-    color: black;
+    color: #111111;
     font-weight: bold;
     line-height: 2;
     font-size: 1.5rem;
@@ -397,7 +397,7 @@ footer a {
   }
   .nav-links li:last-of-type a:hover {
     transition: 0.1s;
-    background-color: black;
+    background-color: #111111;
     color: white;
   }
 
