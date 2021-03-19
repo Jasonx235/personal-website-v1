@@ -37,7 +37,7 @@ h1 {
 /* TOP 3 projects */
 .main-projects {
   width: 100%;
-  /* border: 2px solid salmon; */
+  border: 2px solid salmon;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
