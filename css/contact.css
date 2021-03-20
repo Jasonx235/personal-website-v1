@@ -2,6 +2,12 @@
 h1 {
   font-size: 7vmin;
 }
+
+textarea,
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
