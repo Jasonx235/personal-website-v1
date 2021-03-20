@@ -98,7 +98,7 @@ h1 {
   background-color: rgba(108, 179, 246, 0.85);
 }
 
-@media (min-width: 667px) {
+@media (min-width: 649px) {
   .projectmain1:nth-of-type(2) img {
     order: 1;
   }
