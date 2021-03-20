@@ -98,12 +98,13 @@ h1 {
   background-color: rgba(108, 179, 246, 0.85);
 }
 
-@media (min-width: 649px) {
+@media (min-width: 667px) {
   .projectmain1:nth-of-type(2) img {
     order: 1;
   }
 
   .projectmain1 .project-content {
+    min-height: 140px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
   }

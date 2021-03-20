@@ -284,6 +284,10 @@ footer a {
     color: aqua;
   } */
 
+  .info {
+    overflow-x: unset;
+  }
+
   .start {
     display: inline-block;
     position: relative;
