@@ -19,6 +19,7 @@ h1 {
 .project-image {
   width: 90%;
   max-width: 325px;
+  max-height: 180px;
   height: 90%;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
